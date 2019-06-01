@@ -26,21 +26,19 @@ h1 {
 	font-family: Raleway, "Helvetica Neue", Helvetica, sans-serif;
 }
 
-.Header {
-	padding-top: 300px;
-	background-color: #414541;
+#Header {
+	padding-top: 2em;
+	background-color: white;
     text-align: center;
-	background-image: url("../img/Wedding_D750_0388.jpg");
-	width: 100%;
-	height: 100%;
-	min-height: 500px;
+	background-image: url("../img/topo.png");
+	min-height: 150px;
 	background-repeat: no-repeat;
 	background-size: cover;
-  	background-attachment: fixed;
-  	background-position: center; 
 }
-.Header h1 {
-	display: none;
+#Header p {
+	color: #333333;
+	font-weight: 400;
+    text-align: center;
 }
 .topnav {
 	z-index: 1;
@@ -136,20 +134,15 @@ footer {
 		font-size: 20px;
 		padding: 20px 40px;
 	}
-	.Header {
-		padding-top: 500px;
+	#Header {
+		padding-top: 4em;
+		background-image: url("../img/topo.png");
 		width: 100%;
-		min-height: 700px;
+		min-height: 200px;
         background-repeat: no-repeat;
         background-size: cover;
 	}
-	.Header h1 {
-		color: white;
-		font-weight: 900;
-		text-align: center;
-		display: block;
-	}
-	.Header p {
+	#Header p {
 		text-align: center;
 	}
 	h4 {
