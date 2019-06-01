@@ -1,0 +1,189 @@
+/* Diana Griffing: Personal Website  */
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400);
+@import url(https://fonts.googleapis.com/css?family=Lato:300);
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+
+body {
+	font-family: Lato, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	background-color: #ffffff;
+	font-style: normal;
+}
+div {
+	display: block;
+}
+.content {
+  min-height: calc(100vh - 108px);
+}
+
+h1 {
+	font-size: 30px;
+    text-align: center;
+	color: #333333;
+	font-family: Raleway, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.Header {
+	padding-top: 300px;
+	background-color: #414541;
+    text-align: center;
+	background-image: url("../img/Wedding_D750_0388.jpg");
+	width: 100%;
+	height: 100%;
+	min-height: 500px;
+	background-repeat: no-repeat;
+	background-size: cover;
+  	background-attachment: fixed;
+  	background-position: center; 
+}
+.Header h1 {
+	display: none;
+}
+.topnav {
+	z-index: 1;
+    text-align: center;
+	width: 100%;
+	height: 24px;
+}
+.topnav a {
+	color: #000000;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 20px 32px;
+	text-decoration: none;
+}
+.topnav a:hover {
+	text-decoration: none;
+	color: #ad9ba7;
+}
+.topnav a.active {
+	font-weight: 900;
+	color: #4a3642;
+	text-decoration: underline;
+}
+.exclude {
+	display: none;
+}
+.bio, .skills, .contact {
+	padding: 24px 24px;
+}
+.divide {
+	margin: 0px 24px;
+}
+.stick {
+	width: 80%;
+	max-width: 300px;
+	opacity: 0.7;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.big-stick {
+	display: none;
+}
+.columns{
+	margin: 0px 30px;
+}
+.left {
+	float: left;
+	width: 40%;
+}
+.right {
+	float: right;
+	width: 40%;
+}
+.columns:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+.skill-list {
+	list-style-type: circle;
+}
+.animoji {
+	max-width: 100%;
+}
+footer {
+  	height: 108px;
+	text-align: center;
+	background-color: #b2b995;
+	font-size: 16px;
+	padding-right: 16px;
+	padding-top: 16px;
+	padding-bottom: 16px;
+}
+.footer-logo {
+	background-color: #b2b995;
+	max-height: 50px;
+	display: block;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+
+@media screen and (min-width: 768px){
+	body {
+		font-size: 20px;
+	}
+	.topnav a {
+		font-size: 20px;
+		padding: 20px 40px;
+	}
+	.Header {
+		padding-top: 500px;
+		width: 100%;
+		min-height: 700px;
+        background-repeat: no-repeat;
+        background-size: cover;
+	}
+	.Header h1 {
+		color: white;
+		font-weight: 900;
+		text-align: center;
+		display: block;
+	}
+	.Header p {
+		text-align: center;
+	}
+	h4 {
+		font-size: 24px;
+	}
+	.columns {
+		margin: 0px 60px;
+	}
+	.exclude {
+		display: inline;
+		list-style-type: circle;
+		margin: 0px 90px;
+	}
+	.skill-list {
+		display: none;
+	}
+	.bio, .skills, .contact {
+		padding: 48px 48px;
+		max-width: 960px;
+		margin: 0 auto !important;
+		float: none !important;
+	}
+	.stick {
+		display: none;
+	}
+	.big-stick {
+		width: 60%;
+		max-width: 600px;
+		opacity: 0.8;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.animoji {
+		max-width: 300px;
+	}
+}
