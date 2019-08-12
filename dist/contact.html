@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/main.css">
+  <title>hire diana!</title>
+</head>
+
+<body>
+  <header>
+    <div class="menu-btn">
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+    </div>
+
+    <nav class="menu">
+      <div class="menu-image">
+        <div class="portrait"></div>
+      </div>
+      <ul class="menu-nav">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">home</a>
+        </li>
+        <li class="nav-item">
+          <a href="about.html" class="nav-link">about</a>
+        </li>
+        <li class="nav-item">
+          <a href="work.html" class="nav-link">my work</a>
+        </li>
+        <li class="nav-item current">
+          <a href="contact.html" class="nav-link">get in touch</a>
+      </ul>
+    </nav>
+  </header>
+  <div id="page-container">
+    <main id="contact">
+      <h1 class="lg-heading">
+        get in touch
+      </h1>
+      <h2 class="sm-heading">
+        <span class="text-secondary-light">diana is currently open to new opportunities!</span>
+      </h2>
+      <div class="boxes">
+        <div>
+          <span class="text-secondary-light">Email: </span>
+          <a class="email" class="email" href="mailto:dianalgcondon@gmail.com">
+            dianalgcondon@gmail.com
+          </a>
+          <span class="icon">
+            <a id="copy-email-button" data-clipboard-text="dianalgcondon@gmail.com">
+                <i class="fas fa-copy"></i>
+            </a>
+          </span>
+        </div>
+      </div>
+    </main>
+
+    <footer id="main-footer">
+      Copyright &copy; 2019
+    </footer>
+  </div>
+
+  <script src="js/main.js"></script>
+
+  <!-- Copy Email, using ClipboardJS (https://clipboardjs.com/) -->
+  <script src="js/clipboard.min.js"></script>
+  <script>
+    var copyEmailButton = document.getElementById("copy-email-button");
+    var clipboard = new ClipboardJS(copyEmailButton);
+    clipboard.on("success", function (e) {
+      console.log(e);
+    });
+    clipboard.on("error", function (e) {
+      console.log(e);
+    });
+  </script>
+
+</body>
+
+</html>
